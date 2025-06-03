@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, top_k_accuracy_score
 from sklearn.preprocessing import StandardScaler
 
-BASE_DIR = "D:/Dataset-main/Dataset-main"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 def load_data(csv_filename):
